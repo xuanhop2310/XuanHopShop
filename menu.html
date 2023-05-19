@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style1.css" />
+    <link rel="stylesheet" href="/assets/css/reponsive.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav>
+            <div class="img-nav">
+                <img src="/assets/img/logo.png" alt="" />
+            </div>
+            <!-- <div class="content-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#popular">Popular</a></li>
+                    <li><a href="#recently">Recently</a></li>
+                    <li><a href="#account">Account</a></li>
+                </ul>
+                <form>
+                    <input type="text" name="search" placeholder="Tìm kiếm sản phẩm..." />
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div> -->
+
+            <div class="nav-mobile">
+                <div class="icon-mobile" id="btnmenu">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <div class="item_menu" id="menutop">
+                    <form>
+                        <input type="text" name="search" placeholder="Tìm kiếm sản phẩm..." />
+                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Popular</a></li>
+                        <li><a href="#">Recently</a></li>
+                        <li><a href="#">Account</a></li>
+                    </ul>
+
+                </div>
+            </div> 
+            <!-- The Modal -->
+            <button id="cart">
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                Giỏ Hàng
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items">
+                          
+                                <div class="cart-items">
+                                    <div class="cart-row">
+                                    <div class="cart-item cart-column">
+                                        <img class="cart-item-image" src="assets/img/Sahimi-So-diep-Nhat-rotated-300x300.jpg" width="100" height="100">
+                                        <span class="cart-item-title">Sashimi Sò Điệp Nhật</span>
+                                    </div>
+                                    <span class="cart-price cart-column">220000đ</span>
+                                    <div class="cart-quantity cart-column">
+                                        <input class="cart-quantity-input" type="number" value="1">
+                                        <button class="btn btn-danger" type="button">Xóa</button>
+                                    </div>
+                                </div>
+                                <div class="cart-row">
+                                    <div class="cart-item cart-column">
+                                        <img class="cart-item-image" src="/assets/img/Com-cuon-dac-biet-sushi-300x300.jpeg" width="100" height="100">
+                                        <span class="cart-item-title">Cơm cuộn đặc biệt</span>
+                                    </div>
+                                    <span class="cart-price cart-column">180000đ</span>
+                                    <div class="cart-quantity cart-column">
+                                        <input class="cart-quantity-input" type="number" value="2">
+                                        <button class="btn btn-danger" type="button">Xóa</button>
+                                       
+                                    </div>
+                                </div>
+                                <div class="cart-total">
+                                    <strong class="cart-total-title">Tổng Cộng:</strong>
+                                    <span class="cart-total-price">580000VNĐ</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div> 
+               </div>
+            </div>
+            
+        </nav>  
+
+    </header>
+
+    <section class="wrapper" id="menu">
+        <div class="products">
+            <ul>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="/assets/img/Sahimi-So-diep-Nhat-rotated-300x300.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Sashimi Sò Điệp Nhật</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">220000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="/assets/img/Com-cuon-dac-biet-sushi-300x300-removebg-preview (1).png"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Cơm nấm Onigiri Kiểu Nhật</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">180000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="/assets/img/Com-luon-Nhat-scaled-300x300.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Cơm Lươn Nhật Bản nướng</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">320000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="/assets/img/Com-ga-ap-chao-sot-Teriyaki-300x300.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Cơm gà áp chảo Teriyaki</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">180000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="/assets/img/Com-cuon-dac-biet-sushi-300x300.jpeg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Cơm cuộn đặc biệt</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">180000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="/assets/img/Com-chien-wagyu-1-300x300.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Cơm chiên bò Wagyu Nhật</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">280000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="/assets/img/Thit-heo-Hokkaido-1-300x300.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Lẩu Sabu Sabu</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">390000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="/assets/img/mi-udon-300x300.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Mì Udon Nhật xào hải sản</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">280000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                    
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="/assets/img/Sashimi-3-loai-300x300.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Sashimi 3 loại (Cá hồi/Sò đỏ/Bạch tuộc)</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">445000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                    
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container container grid">
+           <div>
+            <a href="#" class="footer__logo">
+                <img src="/assets/img/logo.png" alt="logo image">
+                Sushi
+            </a>
+            <p class="footer__description">
+                Food for the body is not <br>
+            enough. There must be food <br>
+            for the soul.
+            </p>
+        </div>
+        <div class="footer__content">
+            <div>
+                <h3 class="footer__title">Main Menu</h3>
+                    <ul class="fotter__links">
+                        <li>
+                            <a href="#" class="footer__link">About</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Menus</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Offer</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Events</a>
+                        </li>
+
+                    </ul>
+             
+            </div>
+        
+        <div>
+                <h3 class="footer__title">Information</h3>
+                    <ul class="fotter__links">
+                        <li>
+                            <a href="#" class="footer__link">Contact</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Order & Returns</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Videos</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#" class="footer__link">Reservation</a>
+                        </li>
+
+                    </ul>
+               
+            </div>
+       
+      
+    <div>
+        <h3 class="footer__title">Address</h3>
+            <ul class="fotter__links">
+                <li class="footer__information">
+                    <a href="#" class="footer__link">The Emporium Tower<br>
+                         184 Đ. Lê Đại Hành
+                </li>
+
+    
+
+                <li class="footer__information">
+                    <a href="#" class="footer__link">9AM - 11PM</a>
+                </li>
+            </ul>
+      
+  
+</div>
+<div>
+    <h3 class="footer__title">Social Media</h3>
+    <ul class="footer__social">
+        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+            <i class="ri-facebook-circle-fill"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+            <i class="ri-instagram-fill"></i>
+        </a>
+        <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+            <i class="ri-twitter-fill"></i>
+        </a>
+            </ul>
+        </div>
+    </div>
+    <img src="assets/img/spring-onion.png" alt="footer image" class="footer__onion">
+    <img src="assets/img/spinach-leaf.png" alt="footer image" class="footer__spinach">
+    <img src="assets/img/leaf-branch-4.png" alt="footer image" class="footer__leaf">
+
+
+        </div>
+        <div class="footer__info container">
+            <div class="footer__card">
+                <img src="assets/img/footer-card-1.png" alt="footer image">
+                <img src="assets/img/footer-card-2.png" alt="footer image">
+                <img src="assets/img/footer-card-3.png" alt="footer image">
+                <img src="assets/img/footer-card-4.png" alt="footer image">
+            </div>
+        </div>
+
+    </footer>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main1.js"></script>
